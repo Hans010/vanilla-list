@@ -1,11 +1,5 @@
 # React boring Todo List
 
-> Short blurb about what your product does.
-
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
 _This project is part of the **"You have to start somewhere"** React Project Series_
 
 Simple todo list using only React.js.
