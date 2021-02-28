@@ -5,9 +5,9 @@ function App() {
 
     return (
         <div className="App">
+            <h1>Todo Love</h1>
             <header className="App-header">
-                Todo Love
-            <TodoList/>
+                <TodoList/>
             </header>
         </div>
     );

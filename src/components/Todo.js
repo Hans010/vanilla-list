@@ -14,7 +14,7 @@ const Todo = (props) => {
     return (
         <div className="taskCard">
             <input type="checkbox" className="checkbox" onClick={checkedHandler}/>
-            <p
+            <p className="task-text"
             style={{
                 textDecoration: checked ? "line-through" : "none",
                 color: checked ? "green" : "black"

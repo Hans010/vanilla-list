@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './AddTodo.css';
+import {v4 as uuid} from 'uuid';
 
 const AddTodo = (props) => {
 
@@ -18,21 +19,23 @@ const AddTodo = (props) => {
 
     const submitTask = (event) => {
         event.preventDefault();
-        console.log(task);
-        props.add2List(task);
-        setTask({
-            id: new Date(),
-            description: "",
-            checked: false
-        })
+        if (task.description.trim()) {
+            console.log(task);
+            props.add2List(task);
+            setTask({
+                id: uuid(),
+                description: "",
+                checked: false
+            });
+        }
     }
 
     return (
         <form onSubmit={submitTask.bind(this)}>
             <label htmlFor="task">Enter new task</label>
             <br/>
-            <input type="text" name="task" value={task.description} onChange={changeValueHandler.bind(this)}/>
-            <button type="submit">Add task</button>
+            <input className="task-field" type="text" name="task" value={task.description} onChange={changeValueHandler.bind(this)}/>
+            <button className="add-button" type="submit">Add task</button>
         </form>
     );
 }
