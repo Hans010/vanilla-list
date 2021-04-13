@@ -2,6 +2,10 @@
 
 _This project is part of the **"You have to start somewhere"** React Project Series_
 
+Because you're not really trying out React without a todo list as a first project...
+
+You can [check it out here](https://lucid-elion-137935.netlify.app/)
+
 Simple todo list using only React.js.
 
 Currently, allows the user to: 
