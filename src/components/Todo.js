@@ -13,14 +13,16 @@ const Todo = (props) => {
 
     return (
         <div className="taskCard">
-            <input type="checkbox" className="checkbox" onClick={checkedHandler}/>
-            <p className="task-text"
-            style={{
-                textDecoration: checked ? "line-through" : "none",
-                color: checked ? "green" : "black"
-            }}
-            >{props.task.description}</p>
-            <button className="del" onClick={props.delete}>Delete</button>
+            <div className="taskWrapper">
+                <input type="checkbox" className="checkbox" onClick={checkedHandler}/>
+                <p className="task-text"
+                   style={{
+                       textDecoration: checked ? "line-through" : "none",
+                       color: checked ? "green" : "black"
+                   }}
+                >{props.task.description}</p>
+            </div>
+            <button className="del" onClick={props.delete}><i className="fas fa-trash"></i></button>
         </div>)
 };
 

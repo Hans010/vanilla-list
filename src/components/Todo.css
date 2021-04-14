@@ -8,8 +8,13 @@
     background: cornflowerblue;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-start;
+    justify-content: space-between;
     position: relative;
+    align-items: center;
+}
+
+.taskWrapper {
+    display: inline-flex;
 }
 
 .checkbox {
@@ -23,8 +28,15 @@
 }
 
 .del {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
     color: red;
+    background: transparent;
+    border: 0;
 }
+
+.fas {
+    font-size: 2rem;
+}
+
